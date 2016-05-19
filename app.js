@@ -8,7 +8,11 @@ $(document).ready(function(){
         type: method,
         dataType: 'json',
         crossDomain: true,
-        data: { sql: query, reindent: 1 },
+        data: { 
+          sql: query,
+          reindent: 1,
+          keyword_case: 'upper'
+        },
     }).done(function(response){
       $('#query').val(response.result);
     });
