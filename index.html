@@ -3,16 +3,17 @@
 
   <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" />
+    <title>SQL Formatter</title>
   </head>
 
   <body class="container">
   <h1>SQL Formatter</h1>
-   
   <div class="form-group">
     <label for="query">Query:</label>
     <textarea class="form-control" rows="20" id="query"></textarea>
   </div>
-  <button class="btn btn-info" id="format">Format query</button>
+  <button class="btn btn-info" title="Format the query" id="format">Format query</button>
+  <button class="btn btn-primary" id="toString">To String</button>
   </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="app.js"></script>
