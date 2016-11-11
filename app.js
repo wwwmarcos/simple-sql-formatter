@@ -2,7 +2,7 @@
 
     $('#format').click(function() {
       var query = getValueOfQuery().replace(/[+]/g, ''),
-        url = 'http://sqlformat.org/api/v1/format',
+        url = 'https://sqlformat.org/api/v1/format',
         method = 'POST';
       $.ajax({
         url: url,
